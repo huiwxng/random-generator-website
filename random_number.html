@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Number Generator</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="generate_number.js" defer></script>
+</head>
+
+<body>
+    <h1 id="title">Random Number Generator</h1>
+
+    <div id="random-number-container">
+        <p id="description">Type in a lower limit and an upper limit to generate a random number between the lower and upper limits (inclusive)</p>
+
+        <div class="input-container">
+            <label>Lower Limit:</label>
+            <input
+                type="text"
+                id="lower-limit"
+            />
+        </div>
+
+        <div class="input-container">
+            <label>Upper Limit:</label>
+            <input
+                type="text"
+                id="upper-limit"
+            />
+        </div>
+
+        <button id="number-btn">Generate</button>
+
+        <p id="random-number">Random Number: </p>
+    </div>
+
+    <a href="index.html"><button>Return to homepage</button></a>
+</body>
+
+</html>

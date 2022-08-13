@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Color Generator</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="generate_color.js" defer></script>
+</head>
+
+<body>
+    <h1 id="title">Random Color Generator</h1>
+
+    <div class="input-container">
+        <label for="type">Choose a type of palette:</label>
+
+        <select name="type" id="type">
+            <option value="Monochromatic">Monochromatic</option>
+            <option value="Complementary">Complementary</option>
+            <option value="Square">Square</option>
+            <option value="Triad">Triad</option>
+            <option value="Shades">Shades</option>
+        </select>
+    </div>
+
+    <div class="input-container">
+        <label>Number of Color Palettes:</label>
+        <input
+            placeholder="Enter an integer (0-10)"
+            type="number"
+            id="number-of-color-palettes"
+            value="1"
+            min="0"
+            max="10"
+            oninput="validity.valid||(value='');"
+        />
+    </div>
+
+    <div class="input-container">
+        <label>Number of Colors per Palette:</label>
+        <input
+            placeholder="Enter an integer (0-10)"
+            type="number"
+            id="number-of-colors"
+            value="1"
+            min="0"
+            max="10"
+            oninput="validity.valid||(value='');"
+        />
+    </div>
+
+    <button id="color-btn">Generate a random color palette</button>
+
+    <div id="color-palettes">
+        <div class="single-color-palette">
+            <div class="single-color-container">
+                <div class="color-box">
+                <!-- The square with the random color -->
+
+                </div>
+
+                <div class="color-hexadecimal">
+                <!-- The hexadecimal value of the random color -->
+                    Hexadecimal: #fff
+                </div>
+
+                <div class="color-rgb">
+                <!-- The rgb values of the random color -->
+                    RGB: (255, 255, 255)
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a href="index.html"><button>Return to homepage</button></a>
+</body>
+
+</html>
