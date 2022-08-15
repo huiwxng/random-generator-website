@@ -1,5 +1,5 @@
-#firstBody{
-    background-color:aliceblue;
+#firstBody {
+    background-color: aliceblue;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -7,8 +7,8 @@
     min-height: 100vh;
 }
 
-#secondBody{
-    background-color:aliceblue;
+#secondBody {
+    background-color: aliceblue;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -16,7 +16,37 @@
     min-height: 60vh;
 }
 
-#title{
+#thirdBody {
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+}
+
+.input-container {
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+}
+
+#number-btn {
+    background-color: aqua;
+    position: relative;
+    left: 360px;
+
+}
+
+#random-number {
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 30px;
+}
+
+#title {
     margin-bottom: 50px;
     color: white;
     background-color: rgb(25, 165, 170);
@@ -47,8 +77,8 @@
     height: 150px;
 }
 
-
-
-#move-btn:active, #number-btn:active, #color-btn:active {
+#move-btn:active,
+#number-btn:active,
+#color-btn:active {
     transform: scale(0.98);
 }
