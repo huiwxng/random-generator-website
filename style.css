@@ -1,55 +1,74 @@
 #firstBody {
     background-color: aliceblue;
+    transition: background-color 1s ease-out;
     display: flex;
-    flex-direction: column;
+    flex-flow: column wrap;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    font-weight: bold;
 }
 
 #secondBody {
     background-color: aliceblue;
+    transition: background-color 1s ease-out;
     display: flex;
-    flex-direction: column;
+    flex-flow: column wrap;
     justify-content: center;
     align-items: center;
-    min-height: 60vh;
+    min-height: 80vh;
+    font-weight: bold;
 }
 
 #thirdBody {
     background-color: aliceblue;
+    transition: background-color 1s ease-out;
     display: flex;
-    flex-direction: column;
+    flex-flow: column wrap;
     justify-content: center;
     align-items: center;
-    min-height: 60vh;
+    min-height: 80vh;
+    font-weight: bold;
 }
 
 .input-container {
-    background-color: aquamarine;
+    background-color: rgb(140, 245, 210);
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
     display: flex;
     justify-content: center;
-}
-
-#number-btn {
-    background-color: aqua;
-    position: relative;
-    left: 360px;
-
 }
 
 #random-number {
     background-color: aqua;
+    padding: 10px;
+    border-radius: 10px;
     display: flex;
     justify-content: center;
     position: relative;
-    left: 30px;
+}
+
+#random-number-container {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 #title {
-    margin-bottom: 50px;
+    margin-bottom: 25px;
     color: white;
     background-color: rgb(25, 165, 170);
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+#logo {
+    border: 2px solid black;
+    margin: 10px;
+    margin-bottom: 20px;
 }
 
 #number-of-color-palettes {
@@ -70,6 +89,17 @@
     flex-flow: row wrap;
 }
 
+.single-color-container {
+    margin: 10px;
+    background-color: rgb(140, 245, 210);
+    border-radius: 10px;
+    padding: 5px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
 .color-box {
     background-color: #fff;
     border: 2px solid black;
@@ -77,8 +107,40 @@
     height: 150px;
 }
 
-#move-btn:active,
-#number-btn:active,
-#color-btn:active {
+#move-btn, #number-btn, #color-btn, #return-btn {
+    border: 2px solid black;
+    color: white;
+    background-color: rgb(25, 165, 170);
+    border-radius: 10px;
+    padding: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 10px;
+}
+
+#move-btn:active, #number-btn:active, #color-btn:active, #return-btn:active {
     transform: scale(0.98);
+}
+
+#move-btn:hover, #number-btn:hover, #color-btn:hover, #return-btn:hover {
+    background-color: rgb(25, 165, 170, 0.8);
+}
+
+#description {
+    background-color: rgb(140, 245, 210);
+    font-size: large;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+#color-hexadecimal, #color-rgb {
+    background-color: rgb(140, 245, 210);
+}
+
+input, select {
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-left: 10px;
 }

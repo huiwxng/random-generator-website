@@ -8,6 +8,7 @@
     <title>Random Color Generator</title>
 
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
     <script src="generate_color.js" defer></script>
 </head>
 
@@ -15,7 +16,7 @@
     <h1 id="title">Random Color Generator</h1>
 
     <div class="input-container">
-        <label for="type">Choose a type of palette:</label>
+        <label for="type">Choose a type of palette: </label>
 
         <select name="type" id="type">
             <option value="Monochromatic">Monochromatic</option>
@@ -27,7 +28,7 @@
     </div>
 
     <div class="input-container">
-        <label>Number of Color Palettes:</label>
+        <label>Number of Color Palettes: </label>
         <input
             placeholder="Enter an integer (0-10)"
             type="number"
@@ -40,7 +41,7 @@
     </div>
 
     <div class="input-container">
-        <label>Number of Colors per Palette:</label>
+        <label>Number of Colors per Palette: </label>
         <input
             placeholder="Enter an integer (0-10)"
             type="number"
@@ -75,7 +76,7 @@
         </div>
     </div>
 
-    <a href="index.html"><button>Return to homepage</button></a>
+    <a href="index.html"><button id="return-btn">Return to homepage</button></a>
 </body>
 
 </html>
